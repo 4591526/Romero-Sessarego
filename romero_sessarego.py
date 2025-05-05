@@ -153,7 +153,7 @@ elif opciones == "Datos":
 elif opciones == "Rasgos gramaticales compartidos":
     st.markdown(f'<h2 style="font-size: 42px; text-align: center; ">Rasgos gramaticales compartidos</h2>', unsafe_allow_html=True)
 
-    st.markdown("## Hallazgos principales del análisis comparativo")
+    # st.markdown("### Hallazgos principales del análisis comparativo")
     st.markdown("""
     - El **AES tradicional** y el **IJS contemporáneo** presentan similitudes morfosintácticas notables.
     - Estas características **se apartan de las variedades nativas típicas del español**.
@@ -165,8 +165,10 @@ elif opciones == "Rasgos gramaticales compartidos":
     - El dominio **verbal**.
     """)
 
-    st.markdown("### Uso de pronombres sujeto explícitos, no enfáticos y no contrastivos")
+
     st.markdown("""
+    ### **Uso de pronombres sujeto explícitos, no enfáticos y no contrastivos**
+                
     - Ejemplo (1): AES
                 
         a. **Nosotro** somos de acá porque **nosotro** vivimo acá desde chico.
@@ -179,9 +181,76 @@ elif opciones == "Rasgos gramaticales compartidos":
                 
         b. **Tú** merkas los gazetos ke **tú** meldas el día entero. 
            (Tú compras los periódicos que tú lees el día entero.)
+                
+    ### **Falta de concordancia verbal phi (persona y número)**
+                
+    - Ejemplo (3): AES
+                
+        a. Ello **dijo** que iba al campo. 
+                
+        b. Cuando yo **tuvo** uso de razón. 
+                
+    - Ejemplo (4): IJS
+                
+        a. Muestras madres **dize** ke a moz plaze komidas buenas. (Nuestras madres dicen que a nosotros nos gustan comidas buenas.) 
+        
+        b. Los sivdades muevas **es** serka de la mar. (Las ciudades nuevas son cerca del mar.) 
+                
+    ### **Falta de concordancia nominal phi (número y género)**
+                
+    - Ejemplo (5): AES
+                
+        a. Mis **hermano joven**. 
+                    
+        b. Cuatro **hermano joven**.
+                    
+        c. **Todo** la cerveza fría. 
+                    
+        d. **Mucho** devoción tenían los afro. 
+                
+    - Ejemplo (6): IJS
+                
+        a. **Muevos novia** están **kontente**. (Las novias nuevas están contentas.) 
+                    
+        b. Estos **ombre** son **mansevo**. (Estos hombres son jóvenes.) 
+                    
+        c. Los padjinas de los **novela** de la komunitá. (Las páginas de las novelas de la comunidad.) 
+                    
+        d. **Esto** es **un** lingua de sekretos. (Esta es una lengua de secretos.)
     """)
+    
+    st.markdown("Estos fenómenos también se encuentran en una serie de lenguas afrohispánicas de las Américas, así como en varios dialectos heredados del español.")
 
+    st.markdown("""
+    ### **Uso de sujetos explícitos no enfáticos, no contrastivos**
+    
+    - Ejemplo (7):
+        
+        b. Claro **yo** como fue chico **yo** no acorda vela. (español afro-boliviano) 
+                
+        c. **Ella** vivía con su mamá y **ella** quería mucho a su abuelita. Y **ella** le dijo... (hablante de español heredado) 
+    
+    ### **Falta de concordancia verbal phi (persona y número)**
+    
+    - Ejemplo (8):
+                
+        b. Tú **jabla** y no **conoce**. (español afro-cubano) 
+                
+        c. Yo bailo y **come**. (bilingüe mexicano en EE.UU.) 
+    
+    ### **Falta de concordancia nominal phi (número y género)**
+    
+    - Ejemplo (9):
+                
+        b. Gente **branco**. (español cubano bozal)
+        
+        c. Veo a **un** nariz **rojo**. (hablante de español heredado)
+                
+                
+                       
+                    
 
+    """)
 elif opciones == "Comentarios":
     st.markdown(f'<h2 style="font-size: 42px; text-align: center; ">Comentarios</h2>', unsafe_allow_html=True)
     
