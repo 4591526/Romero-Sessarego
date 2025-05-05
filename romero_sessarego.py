@@ -6,129 +6,78 @@ import folium
 from streamlit_folium import st_folium
 
 st.sidebar.title("Interfaces Lingüísticas en Judeo-Español en Estambul y Español Afro-Ecuatoriano")
-opciones = st.sidebar.selectbox("Selecciona la sección:",["Introducción", "Similaridades sociolingüísticas", "Datos"] )
+opciones = st.sidebar.selectbox("Selecciona la sección:",["Introducción", "Similaridades sociolingüísticas", "Datos", "Rasgos gramaticales compartidos", "Comentarios"] )
 
 if opciones == "Introducción":
-    st.markdown(f'<h1 style="font-size: 38px; text-align: center; ">Difícil de conseguir, fácil de perder: Interfaces Lingüísticas en Judeo-Español en Estambul y Español Afro-Ecuatoriano</h1>', unsafe_allow_html=True)
+    st.markdown(f'<h1 style="font-size: 38px; text-align: center; ">Difícil de conseguir, fácil de perder: Interfaces Lingüísticas en judeo-español de Estambul y español Afro-Ecuatoriano</h1>', unsafe_allow_html=True)
     st.markdown(f'<h2 style="font-size: 30px; text-align: center; ">Romero y Sessarego (2018)</h2>', unsafe_allow_html=True)
-    text_1 = """
+    st.markdown("""
+        - Se analizan dos dialectos del español: **AES** y **IJS**.
+        - Ambos son **L1s** en sus comunidades, pero muestran rasgos típicos de **L2** y español **heredado**.
+        - Fenómenos compartidos:
+        - a) Sujeto explícito no enfático/contrastivo.
+        - b) Nominal empobrecido.
+        - c) Concordancia verbal en persona, número y género (**rasgos phi**).
+        """)
 
-    """
-    st.markdown(text_1)
+    st.markdown("### Enfoque teórico")
+    st.markdown("""
+        - Se propone un **modelo de transmisión por contacto** basado en la **arquitectura modular** de la facultad del lenguaje.
+        - Articula teorías de:
+        - **Adquisición de segunda lengua (SLA)**.
+        - **Atrición de lengua materna (FLA)**.
+        """)
+
+    st.markdown("### Aportes del estudio")
+    st.markdown("""
+        - Estudia dos variedades en contacto **nunca antes comparadas directamente**.
+        - Identifica patrones estructurales similares en ambos dialectos.
+        - Relaciona fenómenos observados con presiones socioeconómicas y desplazamiento lingüístico.
+        - Contribuye a teorías sobre el lenguaje desde una **perspectiva formal y generativa**.
+        """)
+
+
 
 elif opciones == "Similaridades sociolingüísticas":
-    # st.markdown(f'<h2 style="font-size: 42px; text-align: center; ">Similitudes sociolingüísticas entre AES y IJS</h2>', unsafe_allow_html=True)
-
-    st.markdown(f'<h3 style="font-size: 30px; text-align: center; ">Español Afro-Ecuatoriano (AES)</h3>', unsafe_allow_html=True)
-
-    text_2 = """
-    📜 Origen histórico:
-    
-    El EAS es hablado por descendientes de esclavos africanos traídos a las tierras altas de Ecuador durante la época colonial para trabajar en haciendas jesuitas.
-    
-    🌱 Cambio sociopolítico en 1964:
-    
-    La reforma agraria liberó a los afroecuatorianos de la servidumbre por deudas, otorgándoles tierras y acceso a la educación.
-
-    🎓 Impacto en la movilidad social:
-    
-    Se establecieron escuelas en zonas rurales afroecuatorianas y se facilitó el acceso a trabajos en ciudades, promoviendo la movilidad social.
-
-    🔄 Cambio lingüístico:
-    
-    Estas transformaciones sociales llevaron a una disminución sistemática en el uso del AES en favor del español ecuatoriano de las tierras altas (HES), una variedad con mayor prestigio social.
-    
-    ⚠️ Situación actual:
-    
-    Solo unos pocos cientos de afroecuatorianos mayores siguen hablando variantes del AES con rasgos afrohispánicos tradicionales.
-
-    🧒🏽 Generaciones jóvenes:
-    
-    Los jóvenes afroecuatorianos usan variedades de español altamente influenciadas o prácticamente indistinguibles del HES.
-    
-    """
-    st.markdown(text_2)
-
-    st.markdown(f'<h3 style="font-size: 30px; text-align: center; ">Judeo-Español en Estambul (IJS)</h3>', unsafe_allow_html=True)
-    text_3 = """
-        🗺️ Origen histórico:
-
-        Tras la expulsión de los judíos sefardíes de España en 1492, muchos se asentaron en el Imperio Otomano, donde su español evolucionó en varios dialectos, incluido el IJS.
-       
-
-        🕌 Protección bajo el sistema zimmi:
-
-        El IJS se mantuvo durante siglos gracias al estatus de zimmi, que permitía autonomía comunitaria en aspectos religiosos, educativos y legales a cambio de un impuesto.
-       
-
-        🏛️ Cambio sociolingüístico en el siglo XX:
-
-        Con la fundación de la República Turca en 1929, se impusieron políticas nacionalistas que promovían exclusivamente el uso del turco, incluyendo educación obligatoria en turco y la prohibición de escuelas en otros idiomas.
-       
-
-        ✈️ Migración y pérdida de dominios lingüísticos:
-
-        La emigración de sefardíes a países de Europa, América y otros destinos debilitó aún más el uso del IJS en Estambul.
-
-        ⚠️ Lengua en peligro:
-
-        Hoy, el IJS se encuentra en peligro de extinción, con un número de hablantes considerablemente reducido.
-        
-
-        👶🏽 Cambio generacional:
-
-        Las generaciones jóvenes de judíos en Estambul muestran una clara preferencia por el turco, y menor competencia en IJS que sus mayores.
-
-        🌍 Influencias modernas:
-
-        Incluso quienes conservan el IJS tienden a acomodarse fonética y léxicamente al español peninsular o latinoamericano por razones comerciales y educativas.
-    
-        """
-    st.markdown(text_3)
+    st.markdown(f'<h2 style="font-size: 42px; text-align: center; ">Similitudes sociolingüísticas entre AES y IJS</h2>', unsafe_allow_html=True)
 
     # Crear la tabla de comparación
     data = {
         "Aspecto": [
             "Origen histórico",
             "Ubicación geográfica",
-            "Grupo hablante",
             "Situación sociolingüística",
             "Dominio de uso",
             "Actitudes externas",
             "Transmisión lingüística",
-            "Vínculo con identidad",
             "Presión del idioma dominante",
             "Cambio generacional",
             "Resultado del contacto lingüístico",
             "Fenómenos paralelos"
         ],
-        "AES tradicional": [
-            "Descendientes de esclavos africanos en plantaciones jesuitas del norte de Ecuador (Sessarego 2013a)",
-            "Valle del Chota, tierras altas del norte de Ecuador",
-            "Afroecuatorianos mayores",
+        "AES: español afro-ecuatoriano": [
+            "Descendientes de esclavos africanos en plantaciones jesuitas del norte de Ecuador",
+            "Variedad afro-hiapánica hablado en el norte de Ecuador",
             "Lengua minoritaria con funciones de identidad comunitaria",
-            "Ámbitos familiares, canciones folclóricas, oralidad local",
+            "Ámbitos familiares, canciones folclóricas",
             "Frecuentemente negativas; bajo valor en el mercado lingüístico",
             "Transmisión doméstica, en declive entre jóvenes",
-            "Asociado a identidad afrodescendiente y prácticas culturales",
-            "Presión del español estándar (HES) en educación y empleo",
-            "Cambio hacia el español regional y estándar",
-            "Convergencia hacia variedades dominantes (HES)",
+            "Presión del español prestigioso de las tierras altas (HES) en la educación y el empleo",
+            "Cambio hacia la variedad dominante (HES)",
+            "Convergencia hacia la variedad dominante (HES)",
             "Rasgos tradicionales del AES coinciden con fenómenos del IJS joven"
         ],
-        "IJS contemporáneo": [
-            "Descendientes de judíos sefardíes expulsados de España en 1492 (Romero 2012)",
-            "Estambul, Turquía",
-            "Judíos sefardíes jóvenes",
-            "Lengua minoritaria con funciones de solidaridad grupal",
-            "Ámbitos religiosos, canciones tradicionales, memoria cultural",
+        "IJS: judeo-español de Estambul": [
+            "Descendientes de judíos sefardíes expulsados de España en 1492",
+            "Hablado por la comunidad sefardí en Estambul (Turquía)",
+            "Lengua minoritaria con funciones de identidad comunitaria",
+            "Ámbitos religiosos y familiares",
             "Frecuentemente negativas; desplazada por el turco",
             "Transmisión limitada; pérdida en generaciones jóvenes",
-            "Lengua ligada a identidad sefardí y religiosa",
             "Imposición del turco en contextos educativos y públicos",
             "Cambio hacia el turco dominante",
             "Divergencia progresiva del judeoespañol tradicional",
-            "Rasgos innovadores del IJS coinciden con estructuras del AES antiguo"
+            "Rasgos innovadores del IJS coinciden con estructuras del AES tradicional"
         ]
     }
 
@@ -141,7 +90,7 @@ elif opciones == "Datos":
     st.markdown(f'<h2 style="font-size: 42px; text-align: center; ">Recolección de datos</h2>', unsafe_allow_html=True)
     st.markdown(f'<h3 style="font-size: 30px; text-align: center; ">Datos del AES</h3>', unsafe_allow_html=True)
     text_4 = """
-       - Se realizó durante el invierno de 2011-2012.
+       - Se realizó entrevistas sociolingüísticas durante el invierno de 2011-2012.
 
        - Participaron 50 hablantes nativos del AES.
 
@@ -151,33 +100,36 @@ elif opciones == "Datos":
     """
     st.markdown(text_4)
 
-    # Coordenadas aproximadas de los pueblos del Valle del Chota
+    # Función para crear un mapa con marcadores sin descripción
+    def crear_mapa(locations, center_coords, zoom_start=9, map_title="Mapa del Valle del Chota (Imbabura y Carchi)"):
+        # Crear mapa centrado en las coordenadas especificadas
+        m = folium.Map(location=center_coords, zoom_start=zoom_start, tiles='CartoDB positron')
+
+        # Añadir los marcadores al mapa sin descripciones
+        for name, coords in locations.items():
+            folium.Marker(location=coords, popup=f"<b>{name}</b>").add_to(m)
+
+        # Mostrar el mapa en Streamlit
+        st.title(map_title)
+        st_data = st_folium(m, width=700, height=500)
+
+    # Coordenadas de los pueblos del Valle del Chota
     locations = {
-        "Tumbabiro": (-0.3693, -78.2325),
-        "Carpuela": (0.3783, -78.1133),
-        "Chota": (0.3958, -78.1178),
+        "Tumbabiro": (0.4613, -78.1922),
+        "Carpuela": (0.4399, -77.9972),
+        "Chota": (0.4551, -77.9958),
         "Santiago": (0.3894, -78.1281),
-        "Chalguayacu": (0.4155, -78.1228),
-        "Chamanal": (0.6296, -77.7404),
-        "Concepción": (0.8441, -77.9432),
+        "Chalguayacu": (0.4260, -77.9625),
+        "Concepción": (0.6031, -78.1292),
         "Caldera": (0.3900, -78.1160),
-        "Cuajara": (0.3974, -78.1206)
+        "Cuajara": (0.6333, -78.1628)
     }
 
-    # Crear mapa centrado en el Valle del Chota
-    m = folium.Map(location=[0.5, -78.0], zoom_start=9, tiles='CartoDB positron')
-
-    # Añadir los marcadores al mapa
-    for name, coords in locations.items():
-        folium.Marker(location=coords, popup=name).add_to(m)
-
-    # Mostrar el mapa en Streamlit
-    st.title("Mapa del Valle del Chota (Imbabura y Carchi)")
-    st_folium(m, width=700, height=500)
-
+    # Llamar a la función para crear y mostrar el mapa
+    crear_mapa(locations, center_coords=[0.5, -78.0])
     st.markdown(f'<h3 style="font-size: 30px; text-align: center; ">Datos del IJS</h3>', unsafe_allow_html=True)
     text_5 = """
-       - Se realizó en 2007.
+       - Se realizó entrevistas sociolingüísticas en 2007.
 
        - Participaron más de 60 hablantes.
 
@@ -189,15 +141,68 @@ elif opciones == "Datos":
 
     st.markdown(f'<h3 style="font-size: 30px; text-align: center; ">Metodología común en ambas comunidades</h3>', unsafe_allow_html=True)
     text_6 = """
-       - Se usaron entrevistas sociolingüísticas como principal técnica de recolección.
 
        - Las entrevistas se desarrollaron en tono libre, permitiendo a los hablantes hablar de temas de su interés.
 
        - Se aplicó el principio de desplazamiento tangencial para fomentar narrativas espontáneas.
 
-       - Se buscó minimizar la paradoja del observador y capturar datos naturalistas del habla vernácula.
+       - Se buscó minimizar la paradoja del observador y capturar datos naturales del habla vernácula.
     """
     st.markdown(text_6)
 
+elif opciones == "Rasgos gramaticales compartidos":
+    st.markdown(f'<h2 style="font-size: 42px; text-align: center; ">Rasgos gramaticales compartidos</h2>', unsafe_allow_html=True)
 
+    st.markdown("## Hallazgos principales del análisis comparativo")
+    st.markdown("""
+    - El **AES tradicional** y el **IJS contemporáneo** presentan similitudes morfosintácticas notables.
+    - Estas características **se apartan de las variedades nativas típicas del español**.
+
+    **Fenómenos observados:**
+    - Uso excesivo de **pronombres sujeto**.
+    - **Reducción de la morfología flexiva** en:
+    - El dominio **nominal**.
+    - El dominio **verbal**.
+    """)
+
+    st.markdown("### Uso de pronombres sujeto explícitos, no enfáticos y no contrastivos")
+    st.markdown("""
+    - Ejemplo (1): AES
+                
+        a. **Nosotro** somos de acá porque **nosotro** vivimo acá desde chico.
+                 
+        b. **Yo** iba a la ciudad y **yo** vendía los producto. 
+    - Ejemplo (2): IJS
+                
+        a. **Yo** digo ke **yo** la kiero a mi ermuera ke está ermoza. 
+           (Yo digo que yo la quiero a mi nuera que está hermosa.)
+                
+        b. **Tú** merkas los gazetos ke **tú** meldas el día entero. 
+           (Tú compras los periódicos que tú lees el día entero.)
+    """)
+
+
+elif opciones == "Comentarios":
+    st.markdown(f'<h2 style="font-size: 42px; text-align: center; ">Comentarios</h2>', unsafe_allow_html=True)
+    
+    st.markdown("""
+    - A lo largo de la lectura eventualmente meten en el mismo saco a las lenguas caribeñas, lo que me hace mucho sentido 
+     (¿creo que esta construcción 'hacer sentido' es calco del inglés?), por lo mismo que también tienen un influjo fuerte 
+      de lenguas africanas en el español. Asimismo, también se habla de lenguas de herencia, como el español en EEUU. 
+      Entonces, una vez más, me deja preguntándome por qué insistir en la comparación entre estas dos variantes. 
+      Además, otro detalle que me parece importante resaltar: la comparativa es entre el EAE tradicional y el JEE moderno. 
+      No hay procesos paralelos, sino más bien opuestos... Pienso que le han dado una explicación de formación histórica al EAE, 
+      que ya se está perdiendo en nuevas generaciones, pero que para el JEE está en un punto de aparición por el contacto con el turco. 
+      Ese punto, en todo caso, queda abandonado y ambas variantes son presentadas realmente como sorprendentemente paralelas; 
+      me parece a mí que el paralelismo se debe a un proceso, que ellos mismos defienden, no exclusivo de ambas —porque lo señalan 
+      para explicar también procesos en lenguas de herencia y otras variedades de español caribeño— y llevado a cabo en distintos 
+      momentos históricos. Sumémosle a esto el hecho de que es un estudio generativista, que apunta a comprender el funcionamiento 
+      universal del lenguaje a nivel abstracto: ¿cuál es el punto de la insistencia en la comparación de estas dos variantes? 
+                
+    - ¿Cómo se manifiesta concretamente la transferencia de estructuras sintácticas? ¿Existen casos de calcos semánticos 
+    sutiles que van más allá del simple préstamo léxico?
+                
+     """)
+    
+    
 
