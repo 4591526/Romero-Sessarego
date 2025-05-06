@@ -296,7 +296,6 @@ elif opciones == "Análisis de datos":
     - El fenómeno se asocia a **estrategias de economía cognitiva**: los elementos más externos del DP (como los determinantes) son adquiridos primero.
     """)
 
-    st.markdown("### Ejemplos ilustrativos")
     st.markdown("""
     - **(13)** D1 y N1 tienen especificaciones completas para género y número → Concordancia estándar.
                 Muchas gatas
