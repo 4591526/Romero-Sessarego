@@ -324,7 +324,7 @@ elif opciones == "La propuesta para las características de AES y IJS":
 
         - La teoría se basa en:
             - La **Gramática Universal (GU)** como mecanismo subyacente tanto en adquisición como en atrición.
-            - La idea de que la adquisición de L1 es espontánea, mientras que la L2 es más limitada, especialmente en interfaces como:
+            - La adquisición de L1 es espontánea, mientras que la L2 es más limitada, especialmente en interfaces como:
                 - Concordancia sujeto-verbo.
                 - Concordancia nominal.
                 - Uso de pronombres.
