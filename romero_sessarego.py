@@ -16,7 +16,9 @@ if opciones == "Introducción":
         - Fenómenos compartidos:
         
             a) Sujeto explícito no enfático - no contrastivo.
+            
             b) Concordancia nominal empobrecido.
+            
             c) Concordancia verbal de persona, número y género (**rasgos phi**).
             
         - Se propone un **modelo de transmisión por contacto** basado en la **arquitectura modular** de la facultad del lenguaje.
