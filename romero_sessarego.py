@@ -355,23 +355,53 @@ elif opciones == "Comentarios":
     st.markdown(f'<h2 style="font-size: 42px; text-align: center; ">Comentarios</h2>', unsafe_allow_html=True)
     
     st.markdown("""
-    - A lo largo de la lectura eventualmente meten en el mismo saco a las lenguas caribeñas, lo que me hace mucho sentido 
-     (¿creo que esta construcción 'hacer sentido' es calco del inglés?), por lo mismo que también tienen un influjo fuerte 
-      de lenguas africanas en el español. Asimismo, también se habla de lenguas de herencia, como el español en EEUU. 
-      Entonces, una vez más, me deja preguntándome por qué insistir en la comparación entre estas dos variantes. 
-      Además, otro detalle que me parece importante resaltar: la comparativa es entre el EAE tradicional y el JEE moderno. 
-      No hay procesos paralelos, sino más bien opuestos... Pienso que le han dado una explicación de formación histórica al EAE, 
-      que ya se está perdiendo en nuevas generaciones, pero que para el JEE está en un punto de aparición por el contacto con el turco. 
-      Ese punto, en todo caso, queda abandonado y ambas variantes son presentadas realmente como sorprendentemente paralelas; 
-      me parece a mí que el paralelismo se debe a un proceso, que ellos mismos defienden, no exclusivo de ambas —porque lo señalan 
-      para explicar también procesos en lenguas de herencia y otras variedades de español caribeño— y llevado a cabo en distintos 
-      momentos históricos. Sumémosle a esto el hecho de que es un estudio generativista, que apunta a comprender el funcionamiento 
-      universal del lenguaje a nivel abstracto: ¿cuál es el punto de la insistencia en la comparación de estas dos variantes? 
+    - La lectura discute una propuesta —de corte **bastante generativista**, dicho sea de paso— para explicar por qué tanto el 
+                español afro-ecuatoriano tradicional y el judeo-español estambulí moderno tienen las mismas características 
+                gramaticales. En principio, confieso que la elección comparativa entre ambas variedades me sorprende un poco. 
+                La justificación es que porque **sociolingüísticamente son muy similares entre sí**, pero, en principio, no creo 
+                que el hecho de ser la variedad de una minoría, empleada solamente en espacios de comunidad  y con poco valor "marketero" 
+                sea una característica exclusiva de estas dos variedades. Además, a lo largo de la lectura eventualmente meten en el mismo 
+                saco a las **lenguas caribeñas**, lo que me hace mucho sentido (¿creo que esta construcción 'hacer sentido' es calco del inglés?), 
+                por lo mismo que también tienen un influjo fuerte de lenguas africanas en el español. Asimismo, también se habla de **lenguas 
+                de herencia**, como el español en EEUU. Entonces, una vez más, me deja preguntándome **por qué insistir en la comparación entre 
+                estas dos variantes**. Además, otro detalle que me parece importante resaltar: **la comparativa es entre el EAE tradicional y el 
+                JEE moderno**. No hay procesos paralelos, sino más bien opuestos... Pienso que le han dado una explicación de formación histórica 
+                al EAE, que ya se está perdiendo en nuevas generaciones, pero que para el JEE está en un punto de aparición por el contacto con 
+                el turco. **Ese punto, en todo caso, queda abandonado y ambas variantes son presentadas realmente como sorprendentemente paralelas; 
+                me parece a mí que el paralelismo se debe a un proceso, que ellos mismos defienden, no exclusivo de ambas —porque lo señalan para 
+                explicar también procesos en lenguas de herencia y otras variedades de español caribeño— y llevado a cabo en distintos momentos 
+                históricos. Sumémosle a esto el hecho de que es un estudio generativista, que apunta a comprender el funcionamiento universal 
+                del lenguaje a nivel abstracto: ¿cuál es el punto de la insistencia en la comparación de estas dos variantes?**  
                 
-    - ¿Cómo se manifiesta concretamente la transferencia de estructuras sintácticas? ¿Existen casos de calcos semánticos 
-    sutiles que van más allá del simple préstamo léxico?
+    - Como limitaciones encontradas en la lectura puedo referir que, si bien en el estudio se propone un modelo de transmisión 
+      lingüística intergeneracional inducida por contacto, que explica la expresión de rasgos compartidos —tales como el uso excesivo 
+      de pronombres y la pérdida de concordancia— como paralelismos estructurales entre variedades no relacionadas ni geográfica ni históricamente
+      —como en el caso del afroespañol ecuatoriano (AES) y el judeoespañol estambulita (IJS)—, en el ámbito metodológico, **no se precisa el nivel 
+      educativo de los 50 hablantes entrevistados de AES ni de los más de 60 de IJS en lo que respecta a su caracterización sociolingüística, pese a que, 
+      en los rasgos observados, ciertas diferencias, como de menores grados de escolarización o alfabetizaciones limitadas, podrían también influir en tales**. 
+      Asimismo, **se indica que, en el caso de las gramáticas de las lenguas que provienen de un proceso de adquisición incompleta (SLA) y de atrición temprana 
+      de L1 (FLA) del español, el dominio incompleto de rasgos phi “da lugar a una variación morfológica en la concordancia entre los dominios nominal y verbal” (p. 73), 
+      pero no se precisa, al respecto, por ejemplo, si tal implica procesos de simplificación estructural —en este caso, de eliminación de marcas morfológicas— y/o de fosilización 
+      —esto es, de estabilización de formas incorrectas o no estándares en el habla a partir de un dominio incompleto de rasgos—, entre otros**.
+
+    - El artículo trata de la comparación entre dos variedades del español que, a pesar de sus diferencias 
+      históricas y geográficas, presentan estructuras similares influenciadas por el contacto lingüístico. 
+      Me pareció interesante la noción de interfaz lingüística, que resulta útil para comprender cómo ciertas 
+      estructuradas se ven alteradas por procesos de transmisión irregular y cambio lingüístico. Aunque el estudio da 
+      a conocer la influencia del contacto en la evolución gramatical de las variedades AES y IJS, **sería necesario 
+      profundizar el valor de los factores extralingüísticos, como la identidad cultural y las dinámicas de la comunidad**.        
+     
+    - La lectura se centra en un análisis comparativo del cambio lingüístico inducido por el contacto en dos 
+        variedades hispánicas geográficamente distantes y con historias sociolingüísticas muy diferentes: el judeoespañol 
+        hablado en Estambul y el español afroecuatoriano. Su argumento central, sólidamente respaldado por la
+        evidencia que presentan, es que, a pesar de la disparidad de sus contextos de contacto, ambas variedades exhiben procesos 
+        de cambio lingüístico notables que son resultado directo de la interacción prolongada con otras lenguas. 
+        Por otro lado, **explora claramente las influencias léxicas** y, en cierta medida, fonológicas y sintácticas de las lenguas en contacto, 
+        me hubiera resultado **aún más enriquecedor una discusión más detallada sobre los mecanismos específicos de estas interfaces**. Por ejemplo, 
+        **¿Cómo se manifiesta concretamente la transferencia de estructuras sintácticas? 
+        ¿Existen casos de calcos semánticos sutiles que van más allá del simple préstamo léxico?**
                 
-     """)
+    """)
     
     
 
