@@ -13,7 +13,6 @@ if opciones == "Introducción":
     st.markdown(f'<h2 style="font-size: 30px; text-align: center; ">Romero y Sessarego (2018)</h2>', unsafe_allow_html=True)
     st.markdown("""
         - Se analizan dos dialectos del español: **AES** y **IJS**.
-        - Ambos son **L1s** en sus comunidades, pero muestran rasgos típicos de **L2** y español de herencia.
         - Fenómenos compartidos:
             a) Sujeto explícito no enfático/contrastivo.
             b) Nominal empobrecido.
