@@ -14,9 +14,11 @@ if opciones == "Introducción":
     st.markdown("""
         - Se analizan dos dialectos del español: **AES** y **IJS**.
         - Fenómenos compartidos:
-            a) Sujeto explícito no enfático/contrastivo.
-            b) Nominal empobrecido.
-            c) Concordancia verbal en persona, número y género (**rasgos phi**).
+        
+            a) Sujeto explícito no enfático - no contrastivo.
+            b) Concordancia nominal empobrecido.
+            c) Concordancia verbal de persona, número y género (**rasgos phi**).
+            
         - Se propone un **modelo de transmisión por contacto** basado en la **arquitectura modular** de la facultad del lenguaje.
             - **Adquisición de la segunda lengua (SLA)**.
             - **Atrición de la lengua materna (FLA)**.
