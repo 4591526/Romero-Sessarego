@@ -43,8 +43,7 @@ elif opciones == "Similaridades sociolingüísticas":
             "Actitudes externas",
             "Transmisión lingüística",
             "Presión del idioma dominante",
-            "Cambio generacional",
-            "Resultado del contacto lingüístico"
+            "Cambio generacional"
         ],
         "AES: español afro-ecuatoriano": [
             "Descendientes de esclavos africanos en plantaciones jesuitas del norte de Ecuador",
@@ -54,8 +53,7 @@ elif opciones == "Similaridades sociolingüísticas":
             "Frecuentemente negativas; bajo valor en el mercado lingüístico",
             "Transmisión doméstica, en declive entre jóvenes",
             "Presión del español prestigioso de las tierras altas (HES) en la educación y el empleo",
-            "Cambio hacia la variedad dominante (HES)",
-            "Convergencia hacia la variedad dominante (HES)"
+            "Cambio hacia la variedad dominante (HES)"
         ],
         "IJS: judeo-español de Estambul": [
             "Descendientes de judíos sefardíes expulsados de España en 1492",
@@ -65,8 +63,7 @@ elif opciones == "Similaridades sociolingüísticas":
             "Frecuentemente negativas; desplazada por el turco",
             "Transmisión limitada; pérdida en generaciones jóvenes",
             "Imposición del turco en contextos educativos y públicos",
-            "Cambio hacia el turco dominante",
-            "Divergencia progresiva del judeoespañol tradicional"
+            "Cambio hacia el turco dominante"
         ]
     }
 
