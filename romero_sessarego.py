@@ -248,12 +248,9 @@ elif opciones == "Análisis de datos":
     - Coincide con la **pérdida de sujetos nulos** y un **cambio gramatical** relacionado con el parámetro de sujeto nulo.
     - Esto sugiere una reconfiguración del **"parámetro de abandono del pro"**.
     """)
-
-    st.markdown("### Interfaces lingüísticas y adquisición")
     st.markdown("""
     - Las **interfaces externas** (sintaxis-pragmática) presentan más dificultad en la SLA/FLA.
-    - Incluso entre **interfaces internas**, no todas son igual de accesibles:
-    - La interfaz **sintaxis-morfología** es vista como un verdadero problema en la adquisición.
+    - Incluso, la interfaz **sintaxis-morfología** es vista como un problema en la adquisición.
     """)
 
     st.markdown("### Desafíos en la ASL y APL")
