@@ -5,37 +5,29 @@ import graphviz
 import folium
 from streamlit_folium import st_folium
 
-st.sidebar.title("Interfaces Lingüísticas en Judeo-Español en Estambul y Español Afro-Ecuatoriano")
-opciones = st.sidebar.selectbox("Selecciona la sección:",["Introducción", "Similaridades sociolingüísticas", "Datos", "Rasgos gramaticales compartidos", "Comentarios"] )
+st.sidebar.title("Interfaces Lingüísticas en judeo-español en Estambul y español afro-Eecuatoriano")
+opciones = st.sidebar.selectbox("Selecciona la sección:",["Introducción", "Similaridades sociolingüísticas", "Datos", "Rasgos gramaticales compartidos", "Análisis de datos", "La propuesta para las características de AES y IJS", "Comentarios"] )
 
 if opciones == "Introducción":
-    st.markdown(f'<h1 style="font-size: 38px; text-align: center; ">Difícil de conseguir, fácil de perder: Interfaces Lingüísticas en judeo-español de Estambul y español Afro-Ecuatoriano</h1>', unsafe_allow_html=True)
+    st.markdown(f'<h1 style="font-size: 38px; text-align: center; ">Difícil de conseguir, fácil de perder: Interfaces Lingüísticas en judeo-español de Estambul y español afro-ecuatoriano</h1>', unsafe_allow_html=True)
     st.markdown(f'<h2 style="font-size: 30px; text-align: center; ">Romero y Sessarego (2018)</h2>', unsafe_allow_html=True)
     st.markdown("""
         - Se analizan dos dialectos del español: **AES** y **IJS**.
-        - Ambos son **L1s** en sus comunidades, pero muestran rasgos típicos de **L2** y español **heredado**.
+        - Ambos son **L1s** en sus comunidades, pero muestran rasgos típicos de **L2** y español de herencia.
         - Fenómenos compartidos:
-        - a) Sujeto explícito no enfático/contrastivo.
-        - b) Nominal empobrecido.
-        - c) Concordancia verbal en persona, número y género (**rasgos phi**).
-        """)
-
-    st.markdown("### Enfoque teórico")
-    st.markdown("""
+            a) Sujeto explícito no enfático/contrastivo.
+            b) Nominal empobrecido.
+            c) Concordancia verbal en persona, número y género (**rasgos phi**).
         - Se propone un **modelo de transmisión por contacto** basado en la **arquitectura modular** de la facultad del lenguaje.
-        - Articula teorías de:
-        - **Adquisición de segunda lengua (SLA)**.
-        - **Atrición de lengua materna (FLA)**.
-        """)
+            - **Adquisición de la segunda lengua (SLA)**.
+            - **Atrición de la lengua materna (FLA)**.
+        """)        
+    st.markdown("### **Población afroecuatoriana en el 2022**")
+    st.image("CENSO 2022.png", caption="Censo 2022 de Ecuador", use_container_width=True)
 
-    st.markdown("### Aportes del estudio")
-    st.markdown("""
-        - Estudia dos variedades en contacto **nunca antes comparadas directamente**.
-        - Identifica patrones estructurales similares en ambos dialectos.
-        - Relaciona fenómenos observados con presiones socioeconómicas y desplazamiento lingüístico.
-        - Contribuye a teorías sobre el lenguaje desde una **perspectiva formal y generativa**.
-        """)
-
+    st.markdown("### **Población serfadí en el 2021**")
+    st.markdown("https://www.publico.es/sociedad/sefardies-largo-camino-vuelta-casa.html")
+        
 
 
 elif opciones == "Similaridades sociolingüísticas":
@@ -52,8 +44,7 @@ elif opciones == "Similaridades sociolingüísticas":
             "Transmisión lingüística",
             "Presión del idioma dominante",
             "Cambio generacional",
-            "Resultado del contacto lingüístico",
-            "Fenómenos paralelos"
+            "Resultado del contacto lingüístico"
         ],
         "AES: español afro-ecuatoriano": [
             "Descendientes de esclavos africanos en plantaciones jesuitas del norte de Ecuador",
@@ -64,8 +55,7 @@ elif opciones == "Similaridades sociolingüísticas":
             "Transmisión doméstica, en declive entre jóvenes",
             "Presión del español prestigioso de las tierras altas (HES) en la educación y el empleo",
             "Cambio hacia la variedad dominante (HES)",
-            "Convergencia hacia la variedad dominante (HES)",
-            "Rasgos tradicionales del AES coinciden con fenómenos del IJS joven"
+            "Convergencia hacia la variedad dominante (HES)"
         ],
         "IJS: judeo-español de Estambul": [
             "Descendientes de judíos sefardíes expulsados de España en 1492",
@@ -76,12 +66,12 @@ elif opciones == "Similaridades sociolingüísticas":
             "Transmisión limitada; pérdida en generaciones jóvenes",
             "Imposición del turco en contextos educativos y públicos",
             "Cambio hacia el turco dominante",
-            "Divergencia progresiva del judeoespañol tradicional",
-            "Rasgos innovadores del IJS coinciden con estructuras del AES tradicional"
+            "Divergencia progresiva del judeoespañol tradicional"
         ]
     }
 
     df = pd.DataFrame(data)
+
 
     # Mostrar la tabla en Streamlit
     st.table(df)
@@ -156,101 +146,215 @@ elif opciones == "Rasgos gramaticales compartidos":
     # st.markdown("### Hallazgos principales del análisis comparativo")
     st.markdown("""
     - El **AES tradicional** y el **IJS contemporáneo** presentan similitudes morfosintácticas notables.
-    - Estas características **se apartan de las variedades nativas típicas del español**.
 
     **Fenómenos observados:**
-    - Uso excesivo de **pronombres sujeto**.
+    - Uso excesivo de **pronombres sujeto explícitos**.
     - **Reducción de la morfología flexiva** en:
-    - El dominio **nominal**.
-    - El dominio **verbal**.
+        - El dominio **nominal**.
+        - El dominio **verbal**.
+    """)
+    
+    st.markdown("**Estos fenómenos también se encuentran en lenguas afrohispánicas de América y en varios dialectos del español de herencia.**")
+    
+    data = {
+        "Fenómeno": [
+            "Uso de pronombres sujeto explícitos", "", "","",
+            "Falta de concordancia verbal phi (persona/número)", "", "", "",
+            "Falta de concordancia nominal phi (género/número)", "", "", "",
+            "Uso de sujetos explícitos (otras variedades)", "", 
+            "Falta de concordancia verbal (otras variedades)", "", 
+            "Falta de concordancia nominal (otras variedades)", "", 
+        ],
+        "Variedad": [
+            "AES", "", "IJS", "",
+            "AES","", "IJS", "",
+            "AES", "", "IJS", "",
+            "Afroboliviano", "Español de herencia", 
+            "Afrocubano", "Bilingüe mexicano en EE.UU.", 
+            "Cubano bozal", "Español de herencia", 
+        ],
+        "Ejemplo": [
+            "a. Nosotro somos de acá porque nosotro vivimo acá desde chico.",
+            "b. Yo iba a la ciudad y yo vendía los producto.",
+            "a. Yo digo ke yo la kiero a mi ermuera ke está ermoza. (Yo digo que yo la quiero a mi nuera que está hermosa.)",
+            "b. Tú merkas los gazetos ke tú meldas el día entero. (Tú compras los periódicos que tú lees el día entero.)",
+
+            "a. Ello dijo que iba al campo.",
+            "b. Cuando yo tuvo uso de razón.",
+            "a. Muestras madres dize ke a moz plaze komidas buenas. (Nuestras madres dicen que a nosotros nos gustan comidas buenas.)",
+            "b. Los sivdades muevas es serka de la mar. (Las ciudades nuevas son cerca del mar.)",
+            
+            "a. Mis hermano joven.",
+            "c. Todo la cerveza fría.",
+            "a. Muevos novia están kontente. (Las novias nuevas están contentas.)",
+            "b. Estos ombre son mansevo. (Estos hombres son jóvenes.)",
+            
+            "Claro yo como fue chico yo no acorda vela.",
+            "Ella vivía con su mamá y ella quería mucho a su abuelita. Y ella le dijo...",
+            
+            
+            "Tú jabla y no conoce.",
+            "Yo bailo y come.",
+            
+            "Gente branco.",
+            "Veo a un nariz rojo."
+        ]
+    }
+
+    df = pd.DataFrame(data)
+    st.dataframe(df, use_container_width=True)
+
+    st.image("tabla1.png", caption="Variación dialectal en las tasas generales de expresión del sujeto", use_container_width=True)
+
+    st.markdown("### Observaciones sobre sujetos explícitos no enfáticos y no contrastivos")
+    st.markdown("""
+    - La expresión explícita de sujetos no enfáticos/contrastivos no es rara en el mundo hispánico.
+
+    ### Antecedentes:
+    - Algunos estudios vinculan este uso a un posible **origen criollo** en ciertas variedades (AHLAs).
+    - Investigaciones recientes consideran a las AHLAs como **interlenguajes avanzados y convencionalizados**, no necesariamente productos de criollización.
+    - Para las **variedades del español de herencia** se asocian los procesos de **atrición** y **adquisición parcial** de la lengua.
+    - Aun así, comparten patrones con las AHLAs, lo que ha llevado a clasificarlas como de tipo **"crioloide"**.
+    - Los autores plantean un modelo de transmisión lingüística inducida por contacto que puede extenderse al JEI y a otras variedades del español de herencia
+    """)
+elif opciones == "Análisis de datos":
+    st.markdown(f'<h2 style="font-size: 42px; text-align: center; ">Análisis de datos</h2>', unsafe_allow_html=True)
+    st.markdown("### Enfoque propuesto")
+    st.markdown("""
+    - Se adopta un marco teórico basado en la **modularidad de la facultad del lenguaje**.
+    - Se utiliza el modelo de **arquitectura de la interfaz** de **Reinhart (2006)**.
+    - La **sintaxis** mantiene un rol central.
+    - Se conecta con otros módulos (semántica, pragmática, etc.) de forma independiente.
+    - No se descartan otros modelos alternativos de interfaz lingüística.
     """)
 
+    st.markdown("### Relevancia para ASL y APL: hipótesis de la interfaz ")
+    st.markdown("""
+    - Ciertas construcciones en la interfaz entre módulos presentan **alta demanda cognitiva**.
+    - Estas son más **difíciles de adquirir en ASL** y las primeras en **erosionarse en APL**.
+    """)
 
     st.markdown("""
-    ### **Uso de pronombres sujeto explícitos, no enfáticos y no contrastivos**
-                
-    - Ejemplo (1): AES
-                
-        a. **Nosotro** somos de acá porque **nosotro** vivimo acá desde chico.
-                 
-        b. **Yo** iba a la ciudad y **yo** vendía los producto. 
-    - Ejemplo (2): IJS
-                
-        a. **Yo** digo ke **yo** la kiero a mi ermuera ke está ermoza. 
-           (Yo digo que yo la quiero a mi nuera que está hermosa.)
-                
-        b. **Tú** merkas los gazetos ke **tú** meldas el día entero. 
-           (Tú compras los periódicos que tú lees el día entero.)
-                
-    ### **Falta de concordancia verbal phi (persona y número)**
-                
-    - Ejemplo (3): AES
-                
-        a. Ello **dijo** que iba al campo. 
-                
-        b. Cuando yo **tuvo** uso de razón. 
-                
-    - Ejemplo (4): IJS
-                
-        a. Muestras madres **dize** ke a moz plaze komidas buenas. (Nuestras madres dicen que a nosotros nos gustan comidas buenas.) 
-        
-        b. Los sivdades muevas **es** serka de la mar. (Las ciudades nuevas son cerca del mar.) 
-                
-    ### **Falta de concordancia nominal phi (número y género)**
-                
-    - Ejemplo (5): AES
-                
-        a. Mis **hermano joven**. 
-                    
-        b. Cuatro **hermano joven**.
-                    
-        c. **Todo** la cerveza fría. 
-                    
-        d. **Mucho** devoción tenían los afro. 
-                
-    - Ejemplo (6): IJS
-                
-        a. **Muevos novia** están **kontente**. (Las novias nuevas están contentas.) 
-                    
-        b. Estos **ombre** son **mansevo**. (Estos hombres son jóvenes.) 
-                    
-        c. Los padjinas de los **novela** de la komunitá. (Las páginas de las novelas de la comunidad.) 
-                    
-        d. **Esto** es **un** lingua de sekretos. (Esta es una lengua de secretos.)
+    - En español, se espera que el sujeto nulo (pro) **no se exprese** en contextos no contrastivos.
+    - El uso de sujetos explícitos involucra la interfaz entre **sintaxis y pragmática**.
+    - Estudios previos muestran que aprendices de L2 y hablantes con **atrición temprana de L1**:
+        - Usan **más sujetos explícitos** de lo esperado.
+        - No adquieren plenamente el sistema de pronombres del español.
     """)
-    
-    st.markdown("Estos fenómenos también se encuentran en una serie de lenguas afrohispánicas de las Américas, así como en varios dialectos heredados del español.")
 
+    st.markdown("### Datos de AES y JEI")
     st.markdown("""
-    ### **Uso de sujetos explícitos no enfáticos, no contrastivos**
-    
-    - Ejemplo (7):
-        
-        b. Claro **yo** como fue chico **yo** no acorda vela. (español afro-boliviano) 
-                
-        c. **Ella** vivía con su mamá y **ella** quería mucho a su abuelita. Y **ella** le dijo... (hablante de español heredado) 
-    
-    ### **Falta de concordancia verbal phi (persona y número)**
-    
-    - Ejemplo (8):
-                
-        b. Tú **jabla** y no **conoce**. (español afro-cubano) 
-                
-        c. Yo bailo y **come**. (bilingüe mexicano en EE.UU.) 
-    
-    ### **Falta de concordancia nominal phi (número y género)**
-    
-    - Ejemplo (9):
-                
-        b. Gente **branco**. (español cubano bozal)
-        
-        c. Veo a **un** nariz **rojo**. (hablante de español heredado)
-                
-                
-                       
-                    
-
+    - Se observa **uso excesivo de sujetos explícitos no enfáticos y no contrastivos**.
+    - Coincide con la **pérdida de sujetos nulos** y un **cambio gramatical** relacionado con el parámetro de sujeto nulo.
+    - Esto sugiere una reconfiguración del **"parámetro de abandono del pro"**.
     """)
+
+    st.markdown("### Interfaces lingüísticas y adquisición")
+    st.markdown("""
+    - Las **interfaces externas** (sintaxis-pragmática) presentan más dificultad en la SLA/FLA.
+    - Incluso entre **interfaces internas**, no todas son igual de accesibles:
+    - La interfaz **sintaxis-morfología** es vista como un verdadero problema en la adquisición.
+    """)
+
+    st.markdown("### Desafíos en la ASL y APL")
+    st.markdown("""
+    - Las **características phi** (persona, número, género) representan una carga significativa en la interfaz **sintaxis-morfología**.
+    - En español, estas marcas son **redundantes** y su dominio:
+        - Ocurre **tarde** en la adquisición de L2 (ASL).
+        - Se **pierde fácilmente** en casos de atrición de L1 (APL).
+    - Esto resulta en **variación morfológica** en la concordancia nominal y verbal.
+    - Se observan **formas verbales invariables**, especialmente la **tercera persona singular** como forma por defecto.
+    """)
+
+    st.markdown("### Propuesta formal")
+    st.markdown("""
+    - Se postulan dos Tense Heads (T) en la numeración léxica:
+        - **T1**: lleva rasgos de tiempo, caso, número y persona (como en español estándar).
+        - **T2**: solo lleva **tiempo**, pero no **número ni persona**.
+    - Resultado:
+        - Si AGREE se da entre sujeto y T1 → **forma plenamente conjugada**.
+                Nosotros bailamos.
+        - Si AGREE se da entre sujeto y T2 → **forma con tiempo, pero tercera persona singular por defecto**.
+                Nosotros baila.
+    """)
+
+    st.markdown("### Interfaz sintaxis - morfología y dominio nominal")
+    st.markdown("""
+    - Las **restricciones en la interfaz sintaxis - morfología** no solo afectan la concordancia sujeto-verbo, sino también la **concordancia de género y número** en el **sintagma nominal (DP)**.
+    - Estudios previos muestran el uso frecuente del **masculino/singular como valor por defecto**.
+    """)
+
+    st.markdown("### Jerarquía de adquisición del DP")
+    st.markdown("""
+    - Investigaciones en **creolística** y **SLA** proponen una jerarquía de adquisición:
+    1. Concordancia en **determinantes definidos** (más temprana y sólida).
+    2. Concordancia en **determinantes indefinidos**.
+    3. Concordancia en **otros elementos del DP**, como adjetivos.
+    - Ejemplo: Estudiantes de inglés aprendiendo francés o español muestran **más concordancia en determinantes** que en adjetivos.
+    """)
+
+    st.markdown("### Evidencia empírica")
+    st.markdown("""
+    - Este patrón se repite en aprendices con L1 muy diversa (italiano, árabe, alemán, etc.).
+    - El fenómeno se asocia a **estrategias de economía cognitiva**: los elementos más externos del DP (como los determinantes) son adquiridos primero.
+    """)
+
+    st.markdown("### Ejemplos ilustrativos")
+    st.markdown("""
+    - **(13)** D1 y N1 tienen especificaciones completas para género y número → Concordancia estándar.
+                Muchas gatas
+    - **(14)** D2 y N2 carecen parcialmente de esas especificaciones → **Concordancia empobrecida**.
+                Mucho gata
+    """)
+
+elif opciones == "La propuesta para las características de AES y IJS":
+    st.markdown(f'<h2 style="font-size: 42px; text-align: center; ">La propuesta para las características de AES y IJS</h2>', unsafe_allow_html=True)
+    st.markdown("""
+        ### Hipótesis central
+
+        La presencia de fenómenos como:
+        - Uso de pronombres explícitos no contrastivos.
+        - Reducción en la concordancia de género y número.
+
+        El **español afroecuatoriano tradicional (AES)** y el **judeoespañol contemporáneo (IJS)**, así como en otras 
+        **variedades de español en contacto o de herencia** son el resultado de procesos sistemáticos de adquisición de lenguaje.
+
+        ---
+
+        ### Fundamento teórico
+
+        - Se postula que estos rasgos provienen de:
+            - La **adquisición L1 (nativización)** a partir de **gramáticas avanzadas de L2**.
+            - La **atrición temprana de L1**, cuando se pierde el dominio completo del idioma original.
+
+        - La teoría se basa en:
+            - La **Gramática Universal (GU)** como mecanismo subyacente tanto en adquisición como en atrición.
+            - La idea de que la adquisición de L1 es espontánea, mientras que la L2 es más limitada, especialmente en interfaces como:
+                - Concordancia sujeto-verbo.
+                - Concordancia nominal.
+                - Uso de pronombres.
+
+        ---
+
+        ### Modelo de transmisión transgeneracional
+
+        - Generación 1: hablantes que alcanzan un dominio intermedio/avanzado del español como L2.
+            - Su producción genera insumos lingüísticos (PLD) no nativos.
+        - Generación 2: adquiere este input como **lengua materna (L1)**, dando origen a una nueva **gramática nativa G2**, que incluye:
+            - Rasgos de L2.
+            - Rasgos de atrición L1.
+
+        Este proceso es lo que se denomina **"nativización"**.
+
+        ---
+
+        ### “Reciclaje lingüístico intracomunitario”
+
+        - Las características no estándar se **transmiten dentro de la comunidad** de generación en generación.
+        - Resultado: cambio sistemático, alejado del español estándar pero **consistente y estructurado**.
+
+        """)
+
 elif opciones == "Comentarios":
     st.markdown(f'<h2 style="font-size: 42px; text-align: center; ">Comentarios</h2>', unsafe_allow_html=True)
     
