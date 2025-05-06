@@ -275,7 +275,6 @@ elif opciones == "Análisis de datos":
                 Nosotros baila.
     """)
 
-    st.markdown("### Interfaz sintaxis - morfología y dominio nominal")
     st.markdown("""
     - Las **restricciones en la interfaz sintaxis - morfología** no solo afectan la concordancia sujeto-verbo, sino también la **concordancia de género y número** en el **sintagma nominal (DP)**.
     - Estudios previos muestran el uso frecuente del **masculino/singular como valor por defecto**.
