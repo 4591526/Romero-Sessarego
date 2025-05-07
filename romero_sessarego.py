@@ -334,7 +334,7 @@ elif opciones == "La propuesta para las características de AES y IJS":
         ### Modelo de transmisión transgeneracional
 
         - Generación 1: hablantes que alcanzan un dominio intermedio/avanzado del español como L2.
-            - Su producción genera insumos lingüísticos (PLD) no nativos.
+            - Su producción genera datos lingüísticos primarios (PLD).
         - Generación 2: adquiere este input como **lengua materna (L1)**, dando origen a una nueva **gramática nativa G2**, que incluye:
             - Rasgos de L2.
             - Rasgos de atrición L1.
