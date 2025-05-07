@@ -341,13 +341,6 @@ elif opciones == "La propuesta para las características de AES y IJS":
 
         Este proceso es lo que se denomina **"nativización"**.
 
-        ---
-
-        ### “Reciclaje lingüístico intracomunitario”
-
-        - Las características no estándar se **transmiten dentro de la comunidad** de generación en generación.
-        - Resultado: cambio sistemático, alejado del español estándar pero **consistente y estructurado**.
-
         """)
 
 elif opciones == "Comentarios":
